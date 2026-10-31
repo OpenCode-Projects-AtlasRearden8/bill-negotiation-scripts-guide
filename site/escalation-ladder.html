@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The escalation ladder · Calmer Bills</title>
+<meta name="description" content="Kind, honest phone scripts for internet, phone, insurance, card-interest and medical-bill discount calls. Education only, never legal advice. Asdale Dynamics, LLC.">
+<style>:root {
+  --bg: #fbf7f0;
+  --paper: #fffdf9;
+  --ink: #2c2a26;
+  --muted: #6d675d;
+  --accent: #9a5b2e;
+  --accent-soft: #f3e4d5;
+  --line: #e5dccd;
+  --green: #3f6f4f;
+}
+* { box-sizing: border-box; }
+html { font-size: 17px; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: Charter, Georgia, Cambria, "Times New Roman", serif;
+  line-height: 1.65;
+}
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: #7c4520; }
+.layout { display: flex; min-height: 100vh; max-width: 1220px; margin: 0 auto; }
+nav.toc {
+  flex: 0 0 250px;
+  padding: 2rem 1.2rem;
+  border-right: 1px solid var(--line);
+}
+nav.toc h2 { font-size: 1rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin: 1.4rem 0 0.4rem; }
+nav.toc h2:first-of-type { margin-top: 0; }
+nav.toc ul { list-style: none; margin: 0; padding: 0; }
+nav.toc li a { display: block; padding: 0.22rem 0.55rem; border-radius: 6px; text-decoration: none; font-size: 0.95rem; }
+nav.toc li a:hover { background: var(--accent-soft); }
+nav.toc li a.active { background: var(--accent-soft); font-weight: bold; color: #6b3d1c; }
+main { flex: 1; min-width: 0; padding: 2.4rem 3rem 5rem; max-width: 52rem; }
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 1rem; top: 1rem; background: var(--paper); padding: 0.4rem 0.8rem; border-radius: 6px; }
+.banner {
+  background: var(--accent-soft);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 0.7rem 1.1rem;
+  margin: 0 0 2rem;
+  font-size: 0.92rem;
+  color: #70543a;
+}
+.banner strong { color: #5d3a1c; }
+h1 { font-size: 2rem; line-height: 1.25; margin: 0 0 1.2rem; }
+h2 { font-size: 1.35rem; margin-top: 2.2rem; border-bottom: 1px solid var(--line); padding-bottom: 0.25rem; }
+h3 { font-size: 1.1rem; margin-top: 1.7rem; }
+blockquote {
+  margin: 1.2rem 0;
+  padding: 0.15rem 1.1rem;
+  border-left: 4px solid var(--accent);
+  background: var(--paper);
+  border-radius: 0 8px 8px 0;
+}
+blockquote p { margin: 0.7rem 0; }
+table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.94rem; }
+th, td { border: 1px solid var(--line); padding: 0.45rem 0.7rem; text-align: left; vertical-align: top; }
+th { background: var(--accent-soft); }
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.86em;
+  background: var(--accent-soft);
+  padding: 0.1em 0.35em;
+  border-radius: 5px;
+}
+pre { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 1rem 1.2rem; overflow-x: auto; }
+pre code { background: none; padding: 0; font-size: 0.86em; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 2.4rem 0; }
+footer.site {
+  border-top: 1px solid var(--line);
+  margin-top: 3rem;
+  padding-top: 1rem;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+.pager { display: flex; justify-content: space-between; gap: 1rem; margin-top: 2.5rem; font-size: 0.95rem; }
+.pager a { text-decoration: none; }
+.pager .next { margin-left: auto; text-align: right; }
+input#navtoggle, label.navtoggle { display: none; }
+@media (max-width: 900px) {
+  .layout { display: block; }
+  nav.toc { border-right: 0; padding: 1rem 1.2rem 0; }
+  label.navtoggle { display: inline-block; cursor: pointer; border: 1px solid var(--line); border-radius: 8px; padding: 0.35rem 0.9rem; background: var(--paper); }
+  nav.toc ul, nav.toc h2 { display: none; }
+  input#navtoggle:checked ~ * ul, input#navtoggle:checked ~ * h2 { display: block; }
+  input#navtoggle:checked ~ ul, input#navtoggle:checked ~ h2 { display: block; }
+  main { padding: 1.6rem 1.2rem 4rem; }
+}
+@media print {
+  nav.toc, .banner, .pager { display: none; }
+  body { background: white; }
+  main { max-width: none; }
+}</style>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<div class="layout">
+<nav class="toc" aria-label="Binder tabs"><input type="checkbox" id="navtoggle" class="skip"><label class="navtoggle" for="navtoggle">☰ Tabs</label><h2>Start here</h2><ul><li><a href="index.html">Calmer Bills — start here</a></li><li><a href="how-to-use.html">How to use this binder</a></li><li><a href="walk-away-math.html">Walk-away math</a></li><li><a href="glossary.html">Glossary</a></li></ul><h2>The five scripts</h2><ul><li><a href="scripts/internet.html">Internet provider</a></li><li><a href="scripts/phone.html">Phone carrier</a></li><li><a href="insurance-call.html">Insurance claim</a></li><li><a href="scripts/card-interest.html">Card interest</a></li><li><a href="scripts/medical-bill.html">Medical bill</a></li></ul><h2>Keep it honest, keep it warm</h2><ul><li><a href="promise-tracker.html">The promise tracker</a></li><li><a href="saying-no.html">Saying no kindly</a></li><li><a href="escalation-ladder.html" class="active">The escalation ladder</a></li></ul></nav>
+<main id="content"><div class="banner" role="note"><strong>Education only — never legal, financial, or medical advice.</strong> This binder explains how conversations usually go; it doesn't replace reading your own statements or consulting a licensed professional for your situation.</div>
+<h1>The escalation ladder</h1>
+<p>Getting stuck isn't failure — it's a schedule. Move up one rung at a time,
+<em>politely</em>, carrying your notes. Politeness isn't softness here; it's how
+you win over the humans at every level.</p>
+<h2>Level 0 — The call itself</h2>
+<p>Your main script, plus the read-back: promises confirmed aloud, and the
+magic question — <strong>"Can you email that with a reference number?"</strong>
+Everything above this rung works better when Level 0 left receipts.</p>
+<h2>Level 1 — Verify, don't assume (48 hours)</h2>
+<ul>
+<li>Check your statement / online account for the promised change.</li>
+<li>Re-read the promise tracker: did you record the rep's name, date, and
+  reference number? (If not, that's the gap to fix <em>before</em> calling back.)</li>
+<li>Nothing landed? The next call is no longer a request, it's a follow-up:</li>
+</ul>
+<blockquote>
+<p>"Hi — I'm calling back about a promise made on [date] by [rep name],
+reference [number]. They committed [exact promise], due by [date]. It
+hasn't appeared. Can you either apply it or tell me honestly what
+happened to it?"</p>
+</blockquote>
+<h2>Level 2 — The patient voice with receipts (1–2 weeks)</h2>
+<p>Same call, more paper. Ask for a <strong>supervisor or retention specialist</strong> —
+calmly, and say why:</p>
+<blockquote>
+<p>"I'm not upset with you at all — you've been clear with me. I'd like
+someone with authority on billing adjustments, so we can settle this in
+one call instead of a fifth one."</p>
+</blockquote>
+<p>Then walk them through your tracker line by line. Ask for the fix in
+writing <em>this</em> call, not "soon."</p>
+<h2>Level 3 — The written record (2–4 weeks)</h2>
+<p>Everything now happens on paper or email, so it dates itself:</p>
+<blockquote>
+<p>"Could you email me a written summary of the commitment made on [date],
+so I can reference it if it still hasn't applied by [check date]?"</p>
+</blockquote>
+<p>Keep it warm; misentries happen. "It looks like the notes didn't transfer —
+let's get the right information attached to my file." Then give them the
+exact promise text and reference number.</p>
+<h2>Level 4 — The firm-but-calm step (4–6 weeks)</h2>
+<p>For money promised and not delivered, the final internal options:</p>
+<ul>
+<li><strong>Billing-dispute / ombudsman / executive-care line</strong> — most large
+  providers have one; their agents have real authority. Say the word:
+  "Who handles billing disputes?" then dial that line with your binder.</li>
+<li><strong>State or consumer help channel</strong> (utility commissions, insurance
+  departments, card issuers' regulators have public contact pages that are
+  free to use). Ask the rep: "What's the formal dispute channel for my
+  situation?" — then use exactly that channel.</li>
+<li><strong>Deliberate silence:</strong> a week of no calls after a written dispute. Not
+  a threat you say aloud — just a real pause that often moves things.</li>
+</ul>
+<h2>Level 5 — The walk-away (with math already done)</h2>
+<p>You did the math before dialing, so this rung is calm rather than angry:</p>
+<blockquote>
+<p>"I appreciate the time you've spent today. Right now the honest answer
+is that my budget wins. I'm going to [switch / wait / choose the other
+offer]. If something changes on your end, I'd take that call happily."</p>
+</blockquote>
+<p>Canceling is a legitimate, fully-considered choice — not a tantrum, and not
+a bluff. That's why walk-away math comes first: you never have to <em>decide</em>
+anything under pressure, because you decided it in your kitchen.</p>
+<hr>
+<p><strong>The ladder's promise:</strong> each rung is <em>nicer</em> than escalation-as-usual.
+No yelling, no threats you can't keep. Every step is true, well
+documented, and easy to defend in any later conversation — with anyone.</p>
+<p><em>Education only — this page is never legal advice; for specific disputes,
+consult the proper regulator or a licensed professional.</em></p>
+<div class="pager"><a class="prev" href="saying-no.html">← Saying no kindly</a></div>
+<footer class="site">Calmer Bills · “like a friend would” guides by Asdale Dynamics, LLC · MIT licensed · works offline · no tracking · education only, never legal advice</footer>
+</main>
+</div>
+</body>
+</html>

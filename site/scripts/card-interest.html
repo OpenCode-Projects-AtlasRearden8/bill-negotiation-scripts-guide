@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Card-interest rate script (one page) · Calmer Bills</title>
+<meta name="description" content="Kind, honest phone scripts for internet, phone, insurance, card-interest and medical-bill discount calls. Education only, never legal advice. Asdale Dynamics, LLC.">
+<style>:root {
+  --bg: #fbf7f0;
+  --paper: #fffdf9;
+  --ink: #2c2a26;
+  --muted: #6d675d;
+  --accent: #9a5b2e;
+  --accent-soft: #f3e4d5;
+  --line: #e5dccd;
+  --green: #3f6f4f;
+}
+* { box-sizing: border-box; }
+html { font-size: 17px; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: Charter, Georgia, Cambria, "Times New Roman", serif;
+  line-height: 1.65;
+}
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: #7c4520; }
+.layout { display: flex; min-height: 100vh; max-width: 1220px; margin: 0 auto; }
+nav.toc {
+  flex: 0 0 250px;
+  padding: 2rem 1.2rem;
+  border-right: 1px solid var(--line);
+}
+nav.toc h2 { font-size: 1rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin: 1.4rem 0 0.4rem; }
+nav.toc h2:first-of-type { margin-top: 0; }
+nav.toc ul { list-style: none; margin: 0; padding: 0; }
+nav.toc li a { display: block; padding: 0.22rem 0.55rem; border-radius: 6px; text-decoration: none; font-size: 0.95rem; }
+nav.toc li a:hover { background: var(--accent-soft); }
+nav.toc li a.active { background: var(--accent-soft); font-weight: bold; color: #6b3d1c; }
+main { flex: 1; min-width: 0; padding: 2.4rem 3rem 5rem; max-width: 52rem; }
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 1rem; top: 1rem; background: var(--paper); padding: 0.4rem 0.8rem; border-radius: 6px; }
+.banner {
+  background: var(--accent-soft);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 0.7rem 1.1rem;
+  margin: 0 0 2rem;
+  font-size: 0.92rem;
+  color: #70543a;
+}
+.banner strong { color: #5d3a1c; }
+h1 { font-size: 2rem; line-height: 1.25; margin: 0 0 1.2rem; }
+h2 { font-size: 1.35rem; margin-top: 2.2rem; border-bottom: 1px solid var(--line); padding-bottom: 0.25rem; }
+h3 { font-size: 1.1rem; margin-top: 1.7rem; }
+blockquote {
+  margin: 1.2rem 0;
+  padding: 0.15rem 1.1rem;
+  border-left: 4px solid var(--accent);
+  background: var(--paper);
+  border-radius: 0 8px 8px 0;
+}
+blockquote p { margin: 0.7rem 0; }
+table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.94rem; }
+th, td { border: 1px solid var(--line); padding: 0.45rem 0.7rem; text-align: left; vertical-align: top; }
+th { background: var(--accent-soft); }
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.86em;
+  background: var(--accent-soft);
+  padding: 0.1em 0.35em;
+  border-radius: 5px;
+}
+pre { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 1rem 1.2rem; overflow-x: auto; }
+pre code { background: none; padding: 0; font-size: 0.86em; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 2.4rem 0; }
+footer.site {
+  border-top: 1px solid var(--line);
+  margin-top: 3rem;
+  padding-top: 1rem;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+.pager { display: flex; justify-content: space-between; gap: 1rem; margin-top: 2.5rem; font-size: 0.95rem; }
+.pager a { text-decoration: none; }
+.pager .next { margin-left: auto; text-align: right; }
+input#navtoggle, label.navtoggle { display: none; }
+@media (max-width: 900px) {
+  .layout { display: block; }
+  nav.toc { border-right: 0; padding: 1rem 1.2rem 0; }
+  label.navtoggle { display: inline-block; cursor: pointer; border: 1px solid var(--line); border-radius: 8px; padding: 0.35rem 0.9rem; background: var(--paper); }
+  nav.toc ul, nav.toc h2 { display: none; }
+  input#navtoggle:checked ~ * ul, input#navtoggle:checked ~ * h2 { display: block; }
+  input#navtoggle:checked ~ ul, input#navtoggle:checked ~ h2 { display: block; }
+  main { padding: 1.6rem 1.2rem 4rem; }
+}
+@media print {
+  nav.toc, .banner, .pager { display: none; }
+  body { background: white; }
+  main { max-width: none; }
+}</style>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<div class="layout">
+<nav class="toc" aria-label="Binder tabs"><input type="checkbox" id="navtoggle" class="skip"><label class="navtoggle" for="navtoggle">☰ Tabs</label><h2>Start here</h2><ul><li><a href="../index.html">Calmer Bills — start here</a></li><li><a href="../how-to-use.html">How to use this binder</a></li><li><a href="../walk-away-math.html">Walk-away math</a></li><li><a href="../glossary.html">Glossary</a></li></ul><h2>The five scripts</h2><ul><li><a href="internet.html">Internet provider</a></li><li><a href="phone.html">Phone carrier</a></li><li><a href="../insurance-call.html">Insurance claim</a></li><li><a href="card-interest.html" class="active">Card interest</a></li><li><a href="medical-bill.html">Medical bill</a></li></ul><h2>Keep it honest, keep it warm</h2><ul><li><a href="../promise-tracker.html">The promise tracker</a></li><li><a href="../saying-no.html">Saying no kindly</a></li><li><a href="../escalation-ladder.html">The escalation ladder</a></li></ul></nav>
+<main id="content"><div class="banner" role="note"><strong>Education only — never legal, financial, or medical advice.</strong> This binder explains how conversations usually go; it doesn't replace reading your own statements or consulting a licensed professional for your situation.</div>
+<h1>Card-interest rate script (one page)</h1>
+<p><em>Read aloud at normal speed. Pauses in brackets are real.</em></p>
+<h2>Before dialing</h2>
+<ul>
+<li><strong>Honest facts check (know these cold):</strong></li>
+<li>Years as cardholder: ______ (true number only)</li>
+<li>Payment history: ______ (never missed / one late in [year] / etc.)</li>
+<li>Current APR: <strong><strong><strong>% · Balance: $</strong></strong></strong></li>
+<li>Comparable real offers: ______% (cards you'd actually qualify for)</li>
+<li><strong>Walk-away decision:</strong> if they say no, do you keep paying on schedule?
+  Usually the answer is yes — say so. That's okay. The ask costs nothing.</li>
+</ul>
+<h2>The call</h2>
+<p><strong>Open:</strong></p>
+<blockquote>
+<p>"Hi, I'm [Your Name], card ending in [last 4]. Quick, friendly request:
+I'd like to ask for a reduced interest rate. Is that something you can
+look at today, or is it the wrong line? You can just tell me — no worries
+either way."</p>
+</blockquote>
+<p><strong>The honest ask (after they confirm they're the right person):</strong></p>
+<blockquote>
+<p>"I've been a cardholder since [year] and I've kept my payments [current /
+never missed / caught back up since X]. I'm carrying a balance of about
+[$] at [APR]%, and at this rate most of my payment is interest. I'd like
+to stay with this card — could you lower the rate, ideally closer to
+[comparable offer]%?"</p>
+</blockquote>
+<p>[Pause. One common reply: "Did you know your credit score…?" They can do a
+soft pull. It's their choice and their tool — you're allowed to let them.]</p>
+<p><strong>If they decline — hear the reason, leave the door open:</strong></p>
+<blockquote>
+<p>"Okay, I appreciate you telling me why. How long before it's reasonable
+to ask again — ninety days? Six months? I'll keep paying as agreed
+meanwhile, and I may call back around [date]."</p>
+</blockquote>
+<p><strong>If a partial cut is offered:</strong></p>
+<blockquote>
+<p>"That's real movement, thank you. Can you confirm exactly what APR goes
+with which portion of the balance — is it everything, or new purchases
+only?"</p>
+</blockquote>
+<p><strong>If they mention a transfer/balance-promo instead:</strong></p>
+<blockquote>
+<p>"What are the transfer fee and the promo end date? And does the regular
+rate apply to old purchases meanwhile? I'd like the full picture before
+deciding."</p>
+</blockquote>
+<p><strong>Closing — read back every promise:</strong></p>
+<blockquote>
+<p>"To be sure I heard it: [new APR]% on [portion], effective [date], no fee
+for the change, remaining terms unchanged. Can I get that in writing
+through my online messages with a reference number?"</p>
+</blockquote>
+<p><strong>Warm exit:</strong></p>
+<blockquote>
+<p>"Thank you for actually looking. Whether it's yes or no, I appreciate
+the time."</p>
+</blockquote>
+<h2>After the call</h2>
+<ul>
+<li>Promise tracker: date, rep name, reason given, promised APR + date, rep's
+  reference number. Set a calendar reminder for the "ask again by" date.</li>
+<li>Watch the next statement. Empty promises evaporate — written ones stick.
+  If the rate never moved → <a href="../escalation-ladder.html">escalation ladder</a>,
+  level 2, notes in hand.</li>
+</ul>
+<div class="pager"><a class="prev" href="../insurance-call.html">← Insurance claim</a><a class="next" href="medical-bill.html">Medical bill →</a></div>
+<footer class="site">Calmer Bills · “like a friend would” guides by Asdale Dynamics, LLC · MIT licensed · works offline · no tracking · education only, never legal advice</footer>
+</main>
+</div>
+</body>
+</html>

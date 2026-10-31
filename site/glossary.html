@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Glossary — plain English, no jargon · Calmer Bills</title>
+<meta name="description" content="Kind, honest phone scripts for internet, phone, insurance, card-interest and medical-bill discount calls. Education only, never legal advice. Asdale Dynamics, LLC.">
+<style>:root {
+  --bg: #fbf7f0;
+  --paper: #fffdf9;
+  --ink: #2c2a26;
+  --muted: #6d675d;
+  --accent: #9a5b2e;
+  --accent-soft: #f3e4d5;
+  --line: #e5dccd;
+  --green: #3f6f4f;
+}
+* { box-sizing: border-box; }
+html { font-size: 17px; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: Charter, Georgia, Cambria, "Times New Roman", serif;
+  line-height: 1.65;
+}
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: #7c4520; }
+.layout { display: flex; min-height: 100vh; max-width: 1220px; margin: 0 auto; }
+nav.toc {
+  flex: 0 0 250px;
+  padding: 2rem 1.2rem;
+  border-right: 1px solid var(--line);
+}
+nav.toc h2 { font-size: 1rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin: 1.4rem 0 0.4rem; }
+nav.toc h2:first-of-type { margin-top: 0; }
+nav.toc ul { list-style: none; margin: 0; padding: 0; }
+nav.toc li a { display: block; padding: 0.22rem 0.55rem; border-radius: 6px; text-decoration: none; font-size: 0.95rem; }
+nav.toc li a:hover { background: var(--accent-soft); }
+nav.toc li a.active { background: var(--accent-soft); font-weight: bold; color: #6b3d1c; }
+main { flex: 1; min-width: 0; padding: 2.4rem 3rem 5rem; max-width: 52rem; }
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 1rem; top: 1rem; background: var(--paper); padding: 0.4rem 0.8rem; border-radius: 6px; }
+.banner {
+  background: var(--accent-soft);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 0.7rem 1.1rem;
+  margin: 0 0 2rem;
+  font-size: 0.92rem;
+  color: #70543a;
+}
+.banner strong { color: #5d3a1c; }
+h1 { font-size: 2rem; line-height: 1.25; margin: 0 0 1.2rem; }
+h2 { font-size: 1.35rem; margin-top: 2.2rem; border-bottom: 1px solid var(--line); padding-bottom: 0.25rem; }
+h3 { font-size: 1.1rem; margin-top: 1.7rem; }
+blockquote {
+  margin: 1.2rem 0;
+  padding: 0.15rem 1.1rem;
+  border-left: 4px solid var(--accent);
+  background: var(--paper);
+  border-radius: 0 8px 8px 0;
+}
+blockquote p { margin: 0.7rem 0; }
+table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.94rem; }
+th, td { border: 1px solid var(--line); padding: 0.45rem 0.7rem; text-align: left; vertical-align: top; }
+th { background: var(--accent-soft); }
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.86em;
+  background: var(--accent-soft);
+  padding: 0.1em 0.35em;
+  border-radius: 5px;
+}
+pre { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 1rem 1.2rem; overflow-x: auto; }
+pre code { background: none; padding: 0; font-size: 0.86em; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 2.4rem 0; }
+footer.site {
+  border-top: 1px solid var(--line);
+  margin-top: 3rem;
+  padding-top: 1rem;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+.pager { display: flex; justify-content: space-between; gap: 1rem; margin-top: 2.5rem; font-size: 0.95rem; }
+.pager a { text-decoration: none; }
+.pager .next { margin-left: auto; text-align: right; }
+input#navtoggle, label.navtoggle { display: none; }
+@media (max-width: 900px) {
+  .layout { display: block; }
+  nav.toc { border-right: 0; padding: 1rem 1.2rem 0; }
+  label.navtoggle { display: inline-block; cursor: pointer; border: 1px solid var(--line); border-radius: 8px; padding: 0.35rem 0.9rem; background: var(--paper); }
+  nav.toc ul, nav.toc h2 { display: none; }
+  input#navtoggle:checked ~ * ul, input#navtoggle:checked ~ * h2 { display: block; }
+  input#navtoggle:checked ~ ul, input#navtoggle:checked ~ h2 { display: block; }
+  main { padding: 1.6rem 1.2rem 4rem; }
+}
+@media print {
+  nav.toc, .banner, .pager { display: none; }
+  body { background: white; }
+  main { max-width: none; }
+}</style>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<div class="layout">
+<nav class="toc" aria-label="Binder tabs"><input type="checkbox" id="navtoggle" class="skip"><label class="navtoggle" for="navtoggle">☰ Tabs</label><h2>Start here</h2><ul><li><a href="index.html">Calmer Bills — start here</a></li><li><a href="how-to-use.html">How to use this binder</a></li><li><a href="walk-away-math.html">Walk-away math</a></li><li><a href="glossary.html" class="active">Glossary</a></li></ul><h2>The five scripts</h2><ul><li><a href="scripts/internet.html">Internet provider</a></li><li><a href="scripts/phone.html">Phone carrier</a></li><li><a href="insurance-call.html">Insurance claim</a></li><li><a href="scripts/card-interest.html">Card interest</a></li><li><a href="scripts/medical-bill.html">Medical bill</a></li></ul><h2>Keep it honest, keep it warm</h2><ul><li><a href="promise-tracker.html">The promise tracker</a></li><li><a href="saying-no.html">Saying no kindly</a></li><li><a href="escalation-ladder.html">The escalation ladder</a></li></ul></nav>
+<main id="content"><div class="banner" role="note"><strong>Education only — never legal, financial, or medical advice.</strong> This binder explains how conversations usually go; it doesn't replace reading your own statements or consulting a licensed professional for your situation.</div>
+<h1>Glossary — plain English, no jargon</h1>
+<p>Every word here is defined the way a friend would explain it over coffee.</p>
+<p><strong>Agent ID</strong> — an internal number companies give their phone reps. Ask for
+it early in a call; it makes any later callback point at the exact person
+who promised you the thing.</p>
+<p><strong>APR (annual percentage rate)</strong> — the yearly cost of carrying a balance,
+as a percentage. At 25% APR, letting $1,000 sit for a year costs about
+$250 in interest. This is why the <a href="scripts/card-interest.html">card-interest script</a>
+exists: small APR moves are big money.</p>
+<p><strong>Balance transfer promo</strong> — a limited-time lower rate for moving a
+balance from another card. Usually has a fee (often 3–5%) and a hard end
+date. Read both aloud before deciding anything.</p>
+<p><strong>Callback / reference number</strong> — a code for <em>your specific call</em>. With it,
+"Marcus said I'd get $15 off" becomes a record someone can pull up.
+Without it, it's your word against the day's shift schedule.</p>
+<p><strong>Charity care / financial assistance</strong> — a hospital program that can
+reduce or forgive bills based on income. Run by the hospital itself;
+nonprofit hospitals are generally required to have one. Asking for the
+application is normal and doesn't obligate you.</p>
+<p><strong>EOB (explanation of benefits)</strong> — a letter from your <em>insurer</em> (not the
+hospital) explaining what was billed, what they allowed, what they paid.
+Not a bill. Compare it against the itemized bill line by line.</p>
+<p><strong>Escalation</strong> — moving a matter to someone with more authority, on
+purpose, politely. Our version is the <a href="escalation-ladder.html">escalation ladder</a>.</p>
+<p><strong>Hardship (plain-words version)</strong> — "my budget genuinely can't stretch to
+this." You don't have to share diagnoses, job details, or documents on a
+discount call; honest plain words are enough to unlock what's on offer.</p>
+<p><strong>Itemized bill</strong> — the bill with every individual charge listed. If you
+only have a summary, ask for this. Hospitals send it as a matter of
+course.</p>
+<p><strong>Leverage</strong> — anything <em>true</em> that makes staying with you attractive:
+loyalty, timing, a real competing offer, your honest budget. Invented
+leverage is easy to detect over the phone and destroys the call.</p>
+<p><strong>Loyalty rate</strong> — a plan price reserved for existing customers. Often not
+advertised; often available if you simply ask, which is the point of these
+scripts.</p>
+<p><strong>Port-out</strong> — moving your phone number to another carrier with the same
+number. Saying you're "preparing a port-out" when you truly are is normal,
+honest leverage with phone carriers.</p>
+<p><strong>Proration</strong> — the odd half-charge you see when a plan changes mid-cycle.
+It's usually correct, just confusing. Expect one weird bill after any plan
+change.</p>
+<p><strong>Read-back</strong> — repeating each promise aloud and asking "does that match
+what you've entered?" It catches mishearing in the moment and commits the
+rep to unambiguous words.</p>
+<p><strong>Retention department</strong> — the team of reps authorized to keep you as a
+customer, usually with real discounts. Sometimes they're one transfer away;
+asking for "retention" by name is fine and normal.</p>
+<p><strong>Soft pull</strong> — a credit check the card issuer can do without your
+permission being needed, that doesn't affect your score. If they offer a
+rate cut "pending review," this is usually what they mean.</p>
+<p><strong>Walk-away point</strong> — the lowest offer you'd accept while still sleeping
+well. Decided <em>before</em> dialing, in <a href="walk-away-math.html">walk-away math</a>, so
+no phone voice gets to decide it for you.</p>
+<hr>
+<p><em>Education only — never legal, financial, or medical advice.</em></p>
+<div class="pager"><a class="prev" href="walk-away-math.html">← Walk-away math</a><a class="next" href="scripts/internet.html">Internet provider →</a></div>
+<footer class="site">Calmer Bills · “like a friend would” guides by Asdale Dynamics, LLC · MIT licensed · works offline · no tracking · education only, never legal advice</footer>
+</main>
+</div>
+</body>
+</html>
